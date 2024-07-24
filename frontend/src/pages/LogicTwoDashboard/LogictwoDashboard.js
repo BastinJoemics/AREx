@@ -10,7 +10,7 @@ import DeviceControl from '../../components/deviceControl/Logic1/DeviceControl';
 import FeedbackMessage from '../../components/feedbackMessage/FeedbackMessage';
 import { selectTelemetryData } from '../../redux/selectors';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const BACKEND_URL = process.env.'http://localhost:5700';
 
 const { getVehicleTelemetryDataForDevice, fetchAddress, sendCommandToFlespi } = productService;
 

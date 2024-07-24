@@ -15,7 +15,7 @@ import GeofenceLogs from '../../components/geofenceLogs/GeofenceLogs';
 import { selectTelemetryData } from '../../redux/selectors';
 
 // Define BACKEND_URL if not defined as an environment variable
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const BACKEND_URL = process.env.'http://localhost:5700';
 const { getVehicleTelemetryDataForDevice, fetchAddress } = productService;
 const REACT_APP_FLESPI_TOKEN = process.env.REACT_APP_FLESPI_TOKEN;
 

@@ -6,7 +6,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { jsPDF } from 'jspdf';
 
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const BACKEND_URL = process.env.'http://localhost:5700';
 
 const VehicleActivityLogs = ({ telemetryData, fetchAddress, doorStatus, deviceId }) => {
   const [vehicleLogs, setVehicleLogs] = useState([]);

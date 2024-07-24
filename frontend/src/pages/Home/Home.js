@@ -158,7 +158,7 @@ const Home = () => {
   useEffect(() => {
     const fetchDeviceDetails = async (deviceId) => {
       try {
-        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/flespi/gw/devices/${deviceId}`, {
+        const response = await axios.get(`${process.env.'http://localhost:5700'}/api/flespi/gw/devices/${deviceId}`, {
           headers: {
             'Authorization': `FlespiToken ${REACT_APP_FLESPI_TOKEN}`,
             'Content-Type': 'application/json'

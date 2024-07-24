@@ -41,7 +41,7 @@ const AssignedDevices = () => {
       
       console.log(`Fetching devices for user ID: ${user._id}`);
       try {
-        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/users/${user._id}/devices`);
+        const response = await axios.get(`${process.env.'http://localhost:5700'}/api/users/${user._id}/devices`);
         console.log("Assigned devices data:", response.data); // Log the entire response
         if (Array.isArray(response.data)) {
           // Flatten the nested arrays
